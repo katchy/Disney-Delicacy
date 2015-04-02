@@ -46,3 +46,8 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 
 #for bootstrat sass
 gem 'bootstrap-sass', '~> 3.3.4.1'
+
+gem 'rmagick'
+gem 'mini_magick', '3.8.0'
+# gem 'imagemagick'
+gem 'carrierwave'
