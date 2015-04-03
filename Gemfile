@@ -51,3 +51,9 @@ gem 'rmagick'
 gem 'mini_magick', '3.8.0'
 # gem 'imagemagick'
 gem 'carrierwave'
+
+group :development, :test do
+    gem 'pry'
+end
+
+gem 'kaminari'

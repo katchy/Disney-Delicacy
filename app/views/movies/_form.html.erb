@@ -1,3 +1,5 @@
+
+
  <%= form_for @movie, :html => {:multipart => true } do |f| %>
      
       <% if @movie.errors.any? %>
@@ -27,16 +29,12 @@
         <%= f.label "runtime_in_minutes" %><br>
         <%= f.number_field "runtime_in_minutes" %>
       </div>
-      <div>
-        <%= f.label "poster_image_url" %><br>
-        <%= f.text_field "poster_image_url" %>
-      </div>
+      
+     
       <div>
         <%= f.label "image" %><br>
-        <%= f.file_field "image" %>
-      </div>
-      <div>
-        <%= f.label "remote_image_url" %> "upload by remote url<br>
+        <%= f.file_field "image" %> or upload by remote url
+        <%= f.label "remote_image_url" %> <br>
         <%= f.text_field "remote_image_url" %>
       </div>
 

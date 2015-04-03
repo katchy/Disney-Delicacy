@@ -1,3 +1,57 @@
+<!-- 
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-4 well well-sm">
+     Sign up!
+      <form action="#" method="post" class="form" role="form">
+       <%= form_for @user do |f| %>
+      <% if @user.errors.any? %>
+        <div>
+          <%= pluralize(@user.errors.count, "error") %> prevented the account from being created:
+          <ul>
+            <% @user.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+        <div class="row">
+          <div class="col-xs-6 col-md-6">
+            <input class="form-control" name="firstname" placeholder="First Name" type="text"
+            required autofocus />
+          </div>
+          <div class="col-xs-6 col-md-6">
+            <input class="form-control" name="lastname" placeholder="Last Name" type="text" required />
+          </div>
+        </div>
+        <input class="form-control" name="email" placeholder="Your Email" type="email" />
+       
+       
+        <input class="form-control" name="password" placeholder="New Password" type="password" />
+
+         <input class="form-control" name="password_confirmation" placeholder="Re-enter Password" type="password" />
+        
+          <label class="radio-inline">
+            <input type="radio" name="admin" id="inlineCheckbox1" value="admin" />
+            Admin
+          </label>
+          <label class="radio-inline">
+            <input type="radio" name="user" id="inlineCheckbox2" value="user" />
+            User
+          </label>
+          <br />
+          <br />
+          <button class="btn btn-lg btn-primary btn-block" type="submit">
+            Sign up</button>
+             <% end %>
+         
+        </div>
+      </div>
+    </div> -->
+    <!-- --------------------------------------------------------------------------- -->
+
+
 <h1>Sign Up</h1>
     <%= form_for @user do |f| %>
       <% if @user.errors.any? %>
@@ -29,6 +83,12 @@
       <div>
         <%= f.label "password_confirmation" %><br>
         <%= f.password_field "password_confirmation" %>
+      </div>
+      <div>
+        <%= f.radio_button(:admin, "true") %>
+        <%= f.label(:admin_admin, "Admin") %>
+        <%= f.radio_button(:admin, "false") %>
+        <%= f.label(:admin_general, "General") %>
       </div>
       <div><%= f.submit "Submit" %></div>
     <% end %>
