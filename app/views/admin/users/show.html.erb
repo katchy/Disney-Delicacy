@@ -1,0 +1,13 @@
+
+<h4>First name:<%= @user.firstname %> (<%= link_to "edit", edit_admin_user_path(@user) %>, <%= link_to "delete", admin_user_path(@user), method: :delete, confirm: "You sure?" %>)<br/>
+Last name: <%= @user.lastname %> <br/>
+Email:<%= @user.email %> <br/>
+Created on : <%= formatted_date(@user.created_at) %><br/>
+Updated on : <%= formatted_date(@user.updated_at) %><br/>
+<% if @user.admin == "true" %>
+Profile type: Admin
+<% else %>
+Profile type: General
+<% end %>
+
+<hr>

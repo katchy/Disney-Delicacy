@@ -1,0 +1,40 @@
+
+    <%= form_for [:admin, @silly] do |f| %>
+      <% if @silly.errors.any? %>
+        <div>
+          <%= pluralize(@silly.errors.count, "error") %> prevented the account from being created:
+          <ul>
+            <% @silly.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <div>
+        <%= f.label "email" %><br>
+        <%= f.text_field "email" %>
+      </div>
+      <div>
+        <%= f.label "firstname", "First Name" %><br>
+        <%= f.text_field "firstname" %>
+      </div>
+      <div>
+        <%= f.label "lastname", "Last Name" %><br>
+        <%= f.text_field "lastname" %>
+      </div>
+      <div>
+        <%= f.label "password" %><br>
+        <%= f.password_field "password" %>
+      </div>
+      <div>
+        <%= f.label "password_confirmation" %><br>
+        <%= f.password_field "password_confirmation" %>
+      </div>
+      <div>
+        <%= f.radio_button(:admin, "true") %>
+        <%= f.label(:admin_admin, "Admin") %>
+        <%= f.radio_button(:admin, "false") %>
+        <%= f.label(:admin_general, "General") %>
+      </div>
+      <div><%= f.submit "Submit" %></div>
+    <% end %>

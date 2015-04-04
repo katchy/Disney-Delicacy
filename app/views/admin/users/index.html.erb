@@ -25,10 +25,11 @@
                 <td><%= u.id %> </td>
                 <td><%= u.firstname %> </td>
                 <td><%= u.lastname %> </td>
+              
                  <% if u.admin == "true" %>
-                <td>Admin</td>
+                <td><%= link_to "Admin", admin_user_path(u) %></td>
                  <% else %>
-                 <td>General</td>
+                 <td><%= link_to "General", admin_user_path(u) %></td>
                  <% end %>
               </tr>
               <% end %>
