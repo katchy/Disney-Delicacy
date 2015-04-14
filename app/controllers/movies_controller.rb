@@ -1,7 +1,13 @@
+require 'pry'
 class MoviesController < ApplicationController
 
   def index
-    @movies = Movie.all
+   if params[:search]
+    
+    @movies = Movie.search(params[:search]).order("created_at DESC")
+    else
+      @movies = Movie.all
+    end
   end
 
   def show
@@ -41,6 +47,7 @@ class MoviesController < ApplicationController
     @movie.destroy
     redirect_to movies_path
   end
+
 
   protected
 

@@ -47,10 +47,13 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 #for bootstrat sass
 gem 'bootstrap-sass', '~> 3.3.4.1'
 
+gem 'angular-ui-bootstrap-rails', '~> 0.12.0'
+
 gem 'rmagick'
 gem 'mini_magick', '3.8.0'
 # gem 'imagemagick'
 gem 'carrierwave'
+gem 'faker'
 
 group :development, :test do
     gem 'pry'
@@ -58,4 +61,3 @@ end
 
 gem 'kaminari'
 
-gem 'faker'
