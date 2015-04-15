@@ -49794,3 +49794,44 @@ Started GET "/assets/users.js?body=1" for 10.0.2.2 at 2015-04-14 20:34:39 +0000
 
 
 Started GET "/assets/application.js?body=1" for 10.0.2.2 at 2015-04-14 20:34:39 +0000
+
+
+Started GET "/" for 10.0.2.2 at 2015-04-15 01:18:51 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (8.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 228ms
+
+SyntaxError (/vagrant/rotten_mangoes/app/models/movie.rb:1: syntax error, unexpected <<
+<<<<<<< HEAD
+  ^
+/vagrant/rotten_mangoes/app/models/movie.rb:42: syntax error, unexpected ===, expecting end-of-input
+=======
+   ^):
+  app/controllers/movies_controller.rb:9:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (8.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (107.2ms)
+
+
+Started GET "/" for 10.0.2.2 at 2015-04-15 01:22:35 +0000
+Processing by MoviesController#index as HTML
+Completed 500 Internal Server Error in 148ms
+
+SyntaxError (/vagrant/rotten_mangoes/app/uploaders/image_uploader.rb:1: syntax error, unexpected <<
+<<<<<<< HEAD
+  ^
+/vagrant/rotten_mangoes/app/uploaders/image_uploader.rb:53: syntax error, unexpected ===, expecting end-of-input
+=======
+   ^):
+  app/models/movie.rb:4:in `<class:Movie>'
+  app/models/movie.rb:1:in `<top (required)>'
+  app/controllers/movies_controller.rb:9:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.1.3/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (63.4ms)
