@@ -58,4 +58,4 @@ class MoviesController < ApplicationController
   end
 
 end
->>>>>>> feature/admins
+
