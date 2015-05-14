@@ -1,28 +1,4 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Disney Delicacy is a website which showcases all the latest disney movies, with images and reviews about each films.this is an experiment site to practise my skills. Achieved learning about scope,special admin features, RoR, Bootstrap CSS,JavaScript, Design principles for a website, uploading images, Thumb nail image display. 
+Technologies used: Ruby ob Rails, sqlite3 DB ,Bootstrap for front end template and design.
