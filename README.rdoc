@@ -1,4 +1,5 @@
 == README
 
 Disney Delicacy is a website which showcases all the latest disney movies, with images and reviews about each films.this is an experiment site to practise my skills. Achieved learning about scope,special admin features, RoR, Bootstrap CSS,JavaScript, Design principles for a website, uploading images, Thumb nail image display. 
-Technologies used: Ruby ob Rails, sqlite3 DB ,Bootstrap for front end template and design.
+
+Technologies used: Ruby on Rails, sqlite3 DB ,Bootstrap Themes and template.
